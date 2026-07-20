@@ -16,19 +16,21 @@
 
 Чтобы передать ssh-ключ используя функцию template_file пишу в блок vars следующий код:
 
-![img_1.png](IMG/img_1.png)
+<img width="416" height="59" alt="image" src="https://github.com/user-attachments/assets/dbe98ea5-4c12-4320-a5cb-de40a6b37981" />
+
 
 Использую такую конструкцию именно потому, что в задании указано условие, что переменная authorized-keys должна принимать в себя список, а не строку.
 
 Сама переменная ssh-authorized-keys выглядит следующим образом:
 
-![img_2.png](IMG/img_2.png)
+<img width="352" height="102" alt="image" src="https://github.com/user-attachments/assets/ceaac57f-5a82-4056-a463-04f91d35a3b3" />
+
 
 3. Чтобы установить nginx на хост используя cloud-init.yml, нужно в секцию ```packages``` добавить строку ``` - nginx```. В нашем случае после запуска виртуальной машины выполняются следующие действия: обновляется кэш пакетов системы, устанавливается текстовый редактор vim и устанавливается nginx.
 
 Проверяю, что nginx установился:
 
-![img.png](IMG/img_3.png)
+<img width="497" height="121" alt="image" src="https://github.com/user-attachments/assets/9e2ce205-14bb-493a-b2c6-21ed708e9996" />
 
 ------
 
@@ -58,27 +60,33 @@ module "vpc_dev" {
 
 2. В модуле используются переменные с именем сети, зоны и cidr блок:
 
-![img_4.png](IMG/img_4.png)
+   <img width="442" height="315" alt="image" src="https://github.com/user-attachments/assets/b600d97b-2b61-4e76-9cf5-1bcd23421359" />
+
 
 3. В terraform console проверю, какой output будет показан при вызове модуля ```module.vpc_dev```:
 
-![img_5.png](IMG/img_5.png)
+
+<img width="284" height="113" alt="image" src="https://github.com/user-attachments/assets/fccc128d-5457-40e5-9b75-d1f3b7bf9065" />
 
 4. Заменил сетевые ресурсы созданным модулем:
 
-![img_6.png](IMG/img_6.png)
+<img width="804" height="184" alt="image" src="https://github.com/user-attachments/assets/71a1a313-861d-4327-9600-539683f6f82c" />
+
 
 5. В root модуле написал следующий output:
 
-![img_7.png](IMG/img_7.png)
+<img width="325" height="142" alt="image" src="https://github.com/user-attachments/assets/5db5c6a9-0c82-48b1-a7ae-9c0741e8c1dd" />
+
 
 Вывод ```module.vpc_dev``` не изменился:
 
-![img_8.png](IMG/img_8.png)
+<img width="323" height="113" alt="image" src="https://github.com/user-attachments/assets/26aeb9fb-184e-48a0-bebd-dcd10ecaf113" />
+
 
 6. С помощью terraform-docs сгенерировал файл документации. Смотреть файл DOCS.md.
 
-![img_15.png](IMG/img_15.png)
+<img width="1402" height="51" alt="image" src="https://github.com/user-attachments/assets/91107540-4313-46ba-af9f-0c0aade914d0" />
+
 
 ### Задание 3
 1. Выведите список ресурсов в стейте.
