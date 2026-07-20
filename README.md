@@ -99,25 +99,25 @@ module "vpc_dev" {
 
 1. Текущий список ресурсов в стейте:
 
-![img_9.png](IMG/img_9.png)
+<img width="579" height="133" alt="image" src="https://github.com/user-attachments/assets/cd10fd89-d830-4ceb-9921-456811372129" />
 
 2. Полностью удалил из стейта модуль vpc_dev:
 
-![img_10.png](IMG/img_10.png)
+<img width="652" height="173" alt="image" src="https://github.com/user-attachments/assets/e0f77493-f99b-4352-afdc-fcf8b721d18e" />
 
 3. Полностью удалил из стейта модуль test-vm:
 
-![img_11.png](IMG/img_11.png)
+<img width="660" height="135" alt="image" src="https://github.com/user-attachments/assets/0a87a2cd-4e10-4ce6-9ae7-a58639786df5" />
 
 4. Обратно импортирую удаленные стейты:
 
-![img_12.png](IMG/img_12.png)
+<img width="1033" height="391" alt="image" src="https://github.com/user-attachments/assets/98532a92-d269-46de-a8dc-57b95a40fce0" />
 
 Аналогичными командами импортирую остальные стейты:
 
-![img_13.png](IMG/img_13.png)
+<img width="1006" height="356" alt="image" src="https://github.com/user-attachments/assets/fb4ae8ac-9d39-46f6-9169-82622694340e" />
 
-![img_14.png](IMG/img_14.png)
+<img width="1039" height="357" alt="image" src="https://github.com/user-attachments/assets/d460dcae-242d-4fe9-b07a-7301abaa584d" />
 
 После импортирования модулей изменений не последовало.
 
